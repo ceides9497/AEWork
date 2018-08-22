@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutomationEditor>
+	<StateInformation>
+		<State>
+			<CurrentState>initialState</CurrentState>
+			<Action>Start</Action>
+			<NextState>startCall</NextState>
+		</State>
+		<State>
+			<CurrentState>initialState</CurrentState>
+			<Action>RetrievePark</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>initialState</CurrentState>
+			<Action>CallPark</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>startCall</CurrentState>
+			<Action>Answer</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>startCall</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>activeCall</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>activeCall</CurrentState>
+			<Action>hold</Action>
+			<NextState>holdState</NextState>
+		</State>
+		<State>
+			<CurrentState>activeCall</CurrentState>
+			<Action>unhold</Action>
+			<NextState>holdState</NextState>
+		</State>		
+		<State>
+			<CurrentState>activeCall</CurrentState>
+			<Action>CallPark</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>activeCall</CurrentState>
+			<Action>RetrievePark</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>activeCall</CurrentState>
+			<Action>ConfStart</Action>
+			<NextState>confStart</NextState>
+		</State>
+		<State>
+			<CurrentState>activeCall</CurrentState>
+			<Action>TransfStart</Action>
+			<NextState>xferStart</NextState>
+		</State>
+		<State>
+			<CurrentState>activeCall</CurrentState>
+			<Action>UnattendedTransferStart</Action>
+			<NextState>bTransferStart</NextState>
+		</State>
+		<State>
+			<CurrentState>bTransferStart</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>bTransferStart</CurrentState>
+			<Action>TransfComp</Action>
+			<NextState>activeCall</NextState>
+		</State>		
+		<State>
+			<CurrentState>holdState</CurrentState>
+			<Action>hold</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>holdState</CurrentState>
+			<Action>unhold</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>holdState</CurrentState>
+			<Action>TransfStart</Action>
+			<NextState>xferStart</NextState>
+		</State>
+		<State>
+			<CurrentState>holdState</CurrentState>
+			<Action>ConfStart</Action>
+			<NextState>confStart</NextState>
+		</State>
+		<State>
+			<CurrentState>confStart</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>confStart</CurrentState>
+			<Action>ConfComp</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>confStart</CurrentState>
+			<Action>Answer</Action>
+			<NextState>confAnswered</NextState>
+		</State>
+		<State>
+			<CurrentState>confAnswered</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>confAnswered</CurrentState>
+			<Action>ConfComp</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>confAnswered</CurrentState>
+			<Action>hold</Action>
+			<NextState>confHoldState</NextState>
+		</State>
+		<State>
+			<CurrentState>confAnswered</CurrentState>
+			<Action>unhold</Action>
+			<NextState>confHoldState</NextState>
+		</State>
+		<State>
+			<CurrentState>confAnswered</CurrentState>
+			<Action>RemoveParty</Action>
+			<NextState>confAnswered</NextState>
+		</State>
+		<State>
+			<CurrentState>xferStart</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>xferStart</CurrentState>
+			<Action>TransfComp</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>xferStart</CurrentState>
+			<Action>Answer</Action>
+			<NextState>xferAnswered</NextState>
+		</State>
+		<State>
+			<CurrentState>xferAnswered</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>xferAnswered</CurrentState>
+			<Action>TransfComp</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>xferAnswered</CurrentState>
+			<Action>hold</Action>
+			<NextState>transferHoldState</NextState>
+		</State>
+		<State>
+			<CurrentState>xferAnswered</CurrentState>
+			<Action>unhold</Action>
+			<NextState>transferHoldState</NextState>
+		</State>
+		<State>
+			<CurrentState>transferHoldState</CurrentState>
+			<Action>hold</Action>
+			<NextState>xferAnswered</NextState>
+		</State>
+		<State>
+			<CurrentState>transferHoldState</CurrentState>
+			<Action>unhold</Action>
+			<NextState>xferAnswered</NextState>
+		</State>
+		<State>
+			<CurrentState>transferHoldState</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>transferHoldState</CurrentState>
+			<Action>TransfComp</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>confHoldState</CurrentState>
+			<Action>hold</Action>
+			<NextState>confAnswered</NextState>
+		</State>
+		<State>
+			<CurrentState>confHoldState</CurrentState>
+			<Action>unhold</Action>
+			<NextState>confAnswered</NextState>
+		</State>
+		<State>
+			<CurrentState>confHoldState</CurrentState>
+			<Action>End</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>confHoldState</CurrentState>
+			<Action>ConfComp</Action>
+			<NextState>activeCall</NextState>
+		</State>
+		<State>
+			<CurrentState>confHoldState</CurrentState>
+			<Action>RemoveParty</Action>
+			<NextState>confHoldState</NextState>
+		</State>
+		<State>
+			<CurrentState>initialState</CurrentState>
+			<Action>callBack</Action>
+			<NextState>initialState</NextState>
+		</State>
+		<State>
+			<CurrentState>initialState</CurrentState>
+			<Action>checkHistory</Action>
+			<NextState>initialState</NextState>
+		</State>
+	</StateInformation>
+	<ActionInfo>
+		<State CurrentState="initialState">
+			<Action Name="Start" Enabled = "True"/>
+			<Action Name="Answer" Enabled = "false"/>
+			<Action Name="End" Enabled = "false"/>
+			<Action Name="hold" Enabled = "false"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "false"/>
+			<Action Name="Park" Enabled = "True"/>
+		</State>
+		<State CurrentState="startCall">
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "True"/>
+			<Action Name="End" Enabled = "True"/>	
+			<Action Name="hold" Enabled = "false"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "false"/>
+			<Action Name="Park" Enabled = "false"/>
+		</State>
+		<State CurrentState="activeCall">
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "false"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "True"/>
+			<Action Name="ConfStart" Enabled = "True"/>
+			<Action Name="TransfStart" Enabled = "True"/>
+			<Action Name="UnattendedTransferStart" Enabled = "True"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "false"/>
+			<Action Name="Park" Enabled = "True"/>
+		</State>
+		<State CurrentState="holdState">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "false"/>
+			<Action Name="End" Enabled = "false"/>
+			<Action Name="hold" Enabled = "True"/>
+			<Action Name="ConfStart" Enabled = "True"/>
+			<Action Name="TransfStart" Enabled = "True"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "false"/>		
+			<Action Name="Park" Enabled = "false"/>				
+		</State>
+		<State CurrentState="confStart">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "true"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "false"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "True"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "false"/>
+			<Action Name="Park" Enabled = "false"/>
+		</State>
+		<State CurrentState="xferStart">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "true"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "false"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "True"/>
+			<Action Name="RemoveParty" Enabled = "false"/>	
+			<Action Name="Park" Enabled = "false"/>		
+		</State>
+		<State CurrentState="xferAnswered">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "false"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "True"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "True"/>
+			<Action Name="RemoveParty" Enabled = "false"/>		
+			<Action Name="Park" Enabled = "false"/>	
+		</State>
+		<State CurrentState="confAnswered">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "false"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "True"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "True"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "true"/>
+			<Action Name="Park" Enabled = "true"/>
+		</State>
+		<State CurrentState="bTransferStart">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "false"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "false"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "True"/>
+			<Action Name="RemoveParty" Enabled = "false"/>	
+			<Action Name="Park" Enabled = "false"/>		
+		</State>
+		<State CurrentState="confHoldState">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "false"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "True"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "True"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "true"/>
+			<Action Name="Park" Enabled = "false"/>
+		</State>
+		<State CurrentState="transferHoldState">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "false"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "True"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "True"/>
+			<Action Name="RemoveParty" Enabled = "false"/>	
+			<Action Name="Park" Enabled = "false"/>				
+		</State>
+		<State CurrentState="RemoveParty">		
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "true"/>
+			<Action Name="End" Enabled = "True"/>
+			<Action Name="hold" Enabled = "false"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "True"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "ture"/>
+			<Action Name="Park" Enabled = "false"/>
+		</State>
+		<State CurrentState="callBack">
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "True"/>
+			<Action Name="End" Enabled = "True"/>	
+			<Action Name="hold" Enabled = "false"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "false"/>
+			<Action Name="Park" Enabled = "false"/>
+		</State>
+		<State CurrentState="checkHistory">
+			<Action Name="Start" Enabled = "false"/>
+			<Action Name="Answer" Enabled = "True"/>
+			<Action Name="End" Enabled = "True"/>	
+			<Action Name="hold" Enabled = "false"/>
+			<Action Name="ConfStart" Enabled = "false"/>
+			<Action Name="TransfStart" Enabled = "false"/>
+			<Action Name="UnattendedTransferStart" Enabled = "false"/>
+			<Action Name="ConfComp" Enabled = "false"/>
+			<Action Name="TransfComp" Enabled = "false"/>
+			<Action Name="RemoveParty" Enabled = "false"/>
+			<Action Name="Park" Enabled = "false"/>
+		</State>
+		
+	</ActionInfo>
+</AutomationEditor>

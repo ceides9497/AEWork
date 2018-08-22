@@ -1,0 +1,563 @@
+@CHARSET "ISO-8859-1";
+
+.keyPressBlock {   
+ 	padding-left:10px;
+ 	margin-left:5px;
+ 	margin-top:12px;
+ 	float:left;
+ 	width:280px;
+ 	height:520px;
+ 	outline:2px solid #818181;
+ 	display: none;
+}  
+.keyPressHide{
+	padding-left:16px;
+	margin-left:5px;
+	margin-top:12px;
+	float:left;
+	width:280px;
+	height:45px;
+	outline:2px solid #818181;
+	padding-top: 10px;
+	display: block;
+	cursor: pointer;
+}
+
+.keyPressHide .textValidate{
+	font-family: 'Source Sans Pro';
+	font-weight:600;
+	font-size: 14px;
+	color: #1414a4;
+	text-align: center;
+	float:left;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown{
+	width: 12px;
+	background-image:url("../images/dropdown arrow.png");
+	background-repeat: no-repeat;
+	height: 10px;	
+	border : 0px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.keyPressBlock .addKeyPress{
+	width: 50px;
+	background-image:url("../images/add.png");
+	background-repeat: no-repeat;
+	height: 23px;	
+	border : 0px;
+	background-color: transparent;
+}
+
+.keyPressBlock .deleteKeyPress{
+	width: 65px;
+	background-image:url("../images/deleteActions.png");
+	background-repeat: no-repeat;
+	height: 23px;	
+	border : 0px;
+	background-color: transparent;
+}
+
+.keyPressBlock .up{
+	width: 40px;
+	background-image:url("../images/up.png");
+	background-repeat: no-repeat;
+	height: 23px;	
+	border : 0px;
+	background-color: transparent;
+}
+
+.keyPressBlock .down{
+	width: 65px;
+	background-image:url("../images/down.png");
+	background-repeat: no-repeat;
+	height: 23px;	
+	border : 0px;
+	background-color: transparent;
+}
+
+
+.keyPressBlock input[type=radio] {
+    border: 0px;
+    width: 11px;
+    height: 10px;
+}
+
+/*Key Press container*/  
+#keyPress{
+	padding-left:2px;
+	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 2px;
+}
+
+#keyPress .lineNo{
+	background-color: orange;
+	border: 0px;
+	height: 20px;
+}
+
+#keyPress .softKey{
+	background-color: darkgray;
+	border: 0px;
+	height: 20px;
+}
+
+#keyPress .dialpadKey{
+	background-color: aqua;
+	border: 0px;
+	height: 20px;
+}
+
+
+ /*Key Press table properties*/
+.keyPress_inner_table{
+	margin-left: 0px;
+	padding-top:0px;
+}
+
+.keyPress_inner_table_body{
+	border-collapse: collapse; 
+	margin-left: 0px;
+	margin-right:0px;
+	width: 90%;
+}
+
+.keyPress_table_th{
+	border-bottom: 1px solid #818181;
+	font-family: 'Source Sans Pro';
+	font-weight:600;
+	font-size: 14px;
+	color: #1414a4;
+	padding-bottom: 10px;
+	text-align: center;
+	cursor: default;
+}
+
+.keyPress_table_td{
+	font-family: 'Source Sans Pro';
+	font-weight:400;
+	/* font-family: 'Source Sans Pro-Regular'; */
+	font-size: 14px;
+	color: #818181;
+	line-height: 15px;
+}
+
+.keyPress_inner_table tbody tr:nth-child(1) td {
+	/* padding-top: 20px;
+	padding-bottom: 20px; */	
+}
+
+.keyPress_inner_table .borderless_tr td{
+	/*line-height: 35px;*/
+	line-height: 15px !important;
+}
+
+/* 
+-----------------------------------------
+	Scrollable related CSS 
+------------------------------------------
+*/
+
+.keyPressBlock .scrollableContainer {
+    height: 475px;
+    position: relative;
+    padding-top: 35px;
+    overflow: hidden;
+    width:255px;
+}
+
+.keyPressBlock .scrollableContainer .headerSpacer {
+	/*    border: 1px solid #d5d5d5;*/
+    border:1px solid #d5d5d5;
+	border-left-width: 0;
+ 	border-right-width: 0;
+ 	border-top-width: 0;
+	border-bottom-width:2px;
+   
+ /*   border-bottom-color: #bbb;
+    position: absolute;
+    height: 36px;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+.keyPressBlock .scrollableContainer th .orderWrapper {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    cursor: pointer;
+}
+
+.keyPressBlock .scrollableContainer th .orderWrapper .order {
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.keyPressBlock .scrollableContainer th .orderWrapper .active {
+    color: #464646;
+}
+
+.keyPressBlock th:nth-child(2) .orderWrapper {
+	top :12px;
+}
+
+.keyPressBlock th:nth-child(4) .orderWrapper {
+	top :13px;
+	right:7.5px;
+}
+
+.keyPressBlock .scrollArea {
+	margin-top:0px;
+    height: 435px;
+    overflow-x: hidden;
+    overflow-y: auto;
+ /*   border: 1px solid #d5d5d5; */
+    /*  the implementation of this is still quite buggy; specifically, it doesn't like the 
+        absolutely positioned heade	rs within 
+    -webkit-overflow-scrolling: touch;  */
+}
+
+.keyPressBlock .scrollArea table {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 0;
+    width:255px;
+    /*width: 100%;*/
+    border: none;
+    margin-left: 2px;
+    margin-top: 0px;
+    border-collapse: separate;	
+	border-spacing: 0 10px;
+    /*border-collapse: separate;*/
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.keyPressBlock .scrollArea table th {
+    padding: 0 !important;
+    border: none !important;
+    min-width: 20px;
+}
+
+.keyPressBlock .scrollArea table .th-inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    height: 20px !important;
+    line-height: 20px !important;
+    cursor: pointer;
+}
+
+.keyPressBlock .scrollArea table th .box {
+ /*   padding: 0 8px;
+    padding-right: 11px;    /*  order icon width*/
+ /*   border-left: 1px solid #ddd; */
+}
+
+/*  to hack fix firefox border issue    */
+@-moz-document url-prefix() {
+    .scrollArea table th .box{
+    /*    border-right: 1px solid #ddd; */
+        border-left: none;
+    }
+}
+
+.keyPressBlock .scrollArea table .th-inner .ng-scope {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.keyPressBlock .scrollArea table tr th:first-child th .box {
+    border-left: none;
+}
+
+.keyPressBlock .scrollArea table .th-inner.condensed {
+    padding: 0 3px;
+}
+
+.keyPressBlock .scrollArea table tbody tr td:first-child {
+    border-left: none;
+}
+
+.keyPressBlock .scrollArea table tbody tr td:last-child {
+    border-right: none;
+}
+
+.keyPressBlock .scrollArea table tbody tr:first-child td {
+    border-top: none;
+}
+
+.keyPressBlock .scrollArea table tbody tr:last-child td {
+  /*  border-bottom: 2px solid #ddd; */
+}
+
+.keyPressBlock .scrollArea table tbody tr td {
+ /*   border-bottom: 1px solid #ddd; */
+  	white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.keyPressBlock .scrollableContainer .scaler {
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    height: 100%;
+    background-color: #CFCFCF;
+}
+
+.keyPressBlock .scrollableContainer th .resize-rod {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: col-resize;
+    width: 4px;
+    height: 100%;
+}
+
+.keyPressBlock .scrollable-resizing .scrollableContainer {
+    cursor: col-resize;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+
+
+/************************** KeyPress Second Inner Scrollable Table **************************/
+
+.keyPressBlock1 {   
+ 	padding-left:10px;
+ 	margin-left:10px;
+ 	margin-top:0px;
+ 	float:left;
+ 	width:225px;
+ 	height:125px;
+ 	outline:2px solid #818181;
+}
+
+/*Key Press container*/  
+#keyPress1{
+	padding-left:2px;
+	padding-right: 0px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+}
+
+ /*Key Press table properties*/
+.keyPress_inner_table{
+	margin-left: 0px;
+	padding-top:0px;
+}
+
+.keyPress_inner_table1_body{
+	border-collapse: collapse; 
+	margin-left: 0px;
+	margin-right:0px;
+	width: 90%;
+}
+
+.keyPress_table1_td{
+	font-family: 'Source Sans Pro';
+	font-weight:400;
+	/* font-family: 'Source Sans Pro-Regular'; */
+	font-size: 14px;
+	color: #818181;
+	line-height: 15px;
+}
+
+.keyPress_inner_table1 tbody tr:nth-child(1) td {
+	/* padding-top: 20px;
+	padding-bottom: 20px; */	
+}
+
+.keyPress_inner_table1 .borderless_tr td{
+	/*line-height: 35px;*/
+	line-height: 15px !important;
+}
+
+/* 
+-----------------------------------------
+	Scrollable related CSS 
+------------------------------------------
+*/
+
+.keyPressBlock1 .scrollableContainer {
+    height: 120px;
+    position: relative;
+    padding-top: 0px;
+    overflow: hidden;
+    width:200px;
+}
+
+.keyPressBlock1 .scrollableContainer .headerSpacer {
+	/*    border: 1px solid #d5d5d5;*/
+    border:1px solid #d5d5d5;
+	border-left-width: 0;
+ 	border-right-width: 0;
+ 	border-top-width: 0;
+	border-bottom-width:0;
+   
+ /*   border-bottom-color: #bbb;
+    position: absolute;
+    height: 36px;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+.keyPressBlock1 .scrollableContainer th .orderWrapper {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    cursor: pointer;
+}
+
+.keyPressBlock1 .scrollableContainer th .orderWrapper .order {
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.keyPressBlock1 .scrollableContainer th .orderWrapper .active {
+    color: #464646;
+}
+
+.keyPressBlock1 th:nth-child(2) .orderWrapper {
+	top :12px;
+}
+
+.keyPressBlock1 th:nth-child(4) .orderWrapper {
+	top :13px;
+	right:7.5px;
+}
+
+.keyPressBlock1 .scrollArea {
+	margin-top:0px;
+    height: 115px;
+    overflow-x: hidden;
+    overflow-y: auto;
+ /*   border: 1px solid #d5d5d5; */
+    /*  the implementation of this is still quite buggy; specifically, it doesn't like the 
+        absolutely positioned heade	rs within 
+    -webkit-overflow-scrolling: touch;  */
+}
+
+.keyPressBlock1 .scrollArea table {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-bottom: 0;
+    width:175px;
+    /*width: 100%;*/
+    border: none;
+    margin-left: 2px;
+    margin-top: 0px;
+    border-collapse: separate;	
+	border-spacing: 0 10px;
+    /*border-collapse: separate;*/
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.keyPressBlock1 .scrollArea table th {
+    padding: 0 !important;
+    border: none !important;
+    min-width: 20px;
+}
+
+.keyPressBlock1 .scrollArea table .th-inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    height: 20px !important;
+    line-height: 20px !important;
+}
+
+.keyPressBlock1 .scrollArea table th .box {
+ /*   padding: 0 8px;
+    padding-right: 11px;    /*  order icon width*/
+ /*   border-left: 1px solid #ddd; */
+}
+
+/*  to hack fix firefox border issue    */
+@-moz-document url-prefix() {
+    .scrollArea table th .box{
+    /*    border-right: 1px solid #ddd; */
+        border-left: none;
+    }
+}
+
+.keyPressBlock1 .scrollArea table .th-inner .ng-scope {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.keyPressBlock1 .scrollArea table tr th:first-child th .box {
+    border-left: none;
+}
+
+.keyPressBlock1 .scrollArea table .th-inner.condensed {
+    padding: 0 3px;
+}
+
+.keyPressBlock1 .scrollArea table tbody tr td:first-child {
+    border-left: none;
+}
+
+.keyPressBlock1 .scrollArea table tbody tr td:last-child {
+    border-right: none;
+}
+
+.keyPressBlock1 .scrollArea table tbody tr:first-child td {
+    border-top: none;
+}
+
+.keyPressBlock1 .scrollArea table tbody tr:last-child td {
+  /*  border-bottom: 2px solid #ddd; */
+}
+
+.keyPressBlock1 .scrollArea table tbody tr td {
+ /*   border-bottom: 1px solid #ddd; */
+  	white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.keyPressBlock1 .scrollableContainer .scaler {
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    height: 100%;
+    background-color: #CFCFCF;
+}
+
+.keyPressBlock1 .scrollableContainer th .resize-rod {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: col-resize;
+    width: 4px;
+    height: 100%;
+}
+
+.keyPressBlock1 .scrollable-resizing .scrollableContainer {
+    cursor: col-resize;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}

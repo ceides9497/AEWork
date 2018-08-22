@@ -1,0 +1,326 @@
+.sip_testcase_heading{
+	float: left;
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Source Sans Pro';
+	padding-top:13px;
+	padding-left:20px;
+}
+.sip_testcase_heading .sideHeadings{
+	font-size: 15px;
+	font-weight: 600;
+	font-family: 'Source Sans Pro';
+	color: #1414a4;
+	float: left;
+}
+.sip_testcase_heading .tcData{
+	float: left;
+	color: #818181;
+	font-family: 'Source Sans Pro';
+	font-weight: 400;
+	padding-top:1px;
+	padding-left:15px;
+	font-size: 14px;
+}
+.sip_testcase_heading .tcData span{
+	display: inline-block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    width: 800px;
+}
+.sipValidate{
+	outline: 2px solid #818181;
+	margin-left: 5px;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	height: 405px;
+	color: rgb(154,154,154);
+	width : 790px;
+	float: left;
+}
+.blockheading{
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 14px;
+    color: #1414a4;
+    padding-top: 10px;
+	margin-left: 15px;
+}
+.sipValidate .labelheader{
+	width: 80px;
+	float: left;
+}
+.sipValidate .linespace{
+	margin-top: 6px;
+	margin-left: 15px;
+	float: left;
+}
+.sipValidate input[type=radio] {
+	vertical-align: top;
+	cursor: pointer;
+}
+.sipValidate .headerSpacer {
+    border: 1px solid #d5d5d5;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    margin: 10px 10px 5px 12px;
+}
+select{
+	height: 25px !important;
+}
+input[type=text]{
+	height: 25px !important;
+}
+.preview_sdp{
+	width: 100px;
+    background-image: url(../images/sipeditor/preview_sdp.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.preview_headers{
+	width: 132px;
+    background-image: url(../images/sipeditor/preview_headers.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.preview_xml_headers{
+	width: 160px;
+    background-image: url(../images/sipeditor/preview_xml_headers.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    border: 0px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sipValidate .addSipValidate {
+    width: 79px;
+    background-image: url(../images/validate.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    border: 0px;
+    background-color: transparent;
+}
+.sipValidate .resetSipValidate {
+    width: 55px;
+    background-image: url(../images/actionButtons/reset.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    border: 0px;
+    background-color: transparent;
+}
+.sipValidate .remove_icon{
+	background-image: url("../images/sipeditor/remove icon.png");
+	background-repeat: no-repeat; 	
+	width:15px;
+	height:15px;
+    margin-left: 5px;
+    margin-top: 5px;
+    cursor: pointer;	
+}
+.rtpValidate{
+	outline: 2px solid #818181;
+	margin-top: 10px;
+	margin-left: 15px;
+	padding-bottom: 5px;
+	height: 405px;
+	color: rgb(154,154,154);
+	width : 210px;
+	float: left;
+}
+.rtpValidate .headerSpacer {
+    border: 1px solid #d5d5d5;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    margin: 10px 10px 5px 12px;
+}
+.rtpValidate .addRtpValidate {
+    width: 79px;
+    background-image: url(../images/validate.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    border: 0px;
+    background-color: transparent;
+    margin-top: 8px;
+}
+.rtpValidate .resetRtpValidate {
+    width: 55px;
+    background-image: url(../images/actionButtons/reset.png);
+    background-repeat: no-repeat;
+    height: 23px;
+    border: 0px;
+    background-color: transparent;
+    margin-top: 8px;
+}
+.rtpValidate .labelheader{
+	width: 70px;
+	float: left;
+}
+.rtpValidate .linespace{
+	margin-top: 8px;
+	margin-left: 15px;
+	float: left;
+}
+.sipXmlBlock{
+	outline: 2px solid #818181;
+ 	margin-left:15px;
+ 	margin-top: 10px;
+ 	float:left;
+ 	width:350px;
+ 	height:300px;
+	color: rgb(154,154,154);
+}
+.sipXmlBlock .headerSpacer {
+    border: 1px solid #d5d5d5;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 2px;
+    margin: 10px 10px 5px 12px;
+}
+.sipXmlBlock .generateXML {   
+ 	float: right;
+ 	background-image:url("../images/generateScript.png");
+ 	background-repeat: no-repeat;
+ 	background-color: transparent;
+ 	border:0px;
+ 	width: 120px;
+ 	height: 21px;
+ 	margin-right: 10px;
+}
+.sipXmlBlock #script_xml{
+	width: 330px;
+	height:225px;
+	border: 0px;
+	margin-top: 5px;
+	padding: 5px;
+	padding-left:20px;
+	background-color: transparent;
+	color : #818181;
+}
+.buttonsDiv .saveXML{
+	width: 110px;
+	background-image:url("../images/saveTestFile.png");
+	background-repeat: no-repeat;
+	height: 23px;	
+	border : 0px;
+	background-color: transparent;
+	margin-top: 10px;
+}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+	float: left;
+    width: 33%;
+    text-align: center;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 14px;
+    width: 100%;
+    border-right: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.buttonsDiv input[type=file]::-webkit-file-upload-button { 
+/* chromes and blink button */
+    cursor: pointer; 
+}
+
+.uploadSip{
+	background-image: url("../images/sipeditor/upload.png");
+	width: 72px;
+	height: 23px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: transparent;
+	float: right;
+	margin-right: 20px;
+    margin-top: 10px;
+}
+
+.saveSip{
+	background-image: url("../images/sipeditor/download.png");
+	width: 94px;
+	height: 23px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: transparent;
+	float: right;
+	margin-right: 10px;
+    margin-top: 10px;
+}
+
+.uploadTSip{
+	width:72px;
+    height:23px;
+	opacity:0;
+	cursor:pointer!important;
+}
+
+#help{
+	background-image: url("../images/sipeditor/help.png");
+	width: 30px;
+	height: 30px;
+	margin-top: 6px;
+	margin-right :3px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-color: transparent;
+	float: right;
+}
+
+.downloadScript {   
+ 	float: right;
+ 	background-image:url("../images/sipeditor/downloadscript.png");
+ 	background-repeat: no-repeat;
+ 	background-color: transparent;
+ 	border:0px;
+ 	width: 100px;
+ 	height: 21px;
+ 	margin-left: 10px;
+}

@@ -1,0 +1,304 @@
+@CHARSET "ISO-8859-1";
+
+.validateBlock {   
+ 	padding-left:10px;
+ 	margin-left:5px;
+ 	float:left;
+ 	width:280px;
+ 	height:520px;
+ 	outline:2px solid #818181;
+ 	display: block;
+}  
+.validateHide{
+	padding-left:16px;
+	margin-left:5px;
+	float:left;
+	width:280px;
+	height:45px;
+	outline:2px solid #818181;
+	padding-top: 10px;
+	display: none;
+	cursor: pointer;
+}
+
+.validateHide .textValidate{
+	font-family: 'Source Sans Pro';
+	font-weight:600;
+	font-size: 14px;
+	color: #1414a4;
+	text-align: center;
+	float:left;
+	-moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dropdown{
+	width: 12px;
+	background-image:url("../images/dropdown arrow.png");
+	background-repeat: no-repeat;
+	height: 10px;	
+	border : 0px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.validateBlock .resetValidate{
+	width: 55px;
+	background-image:url("../images/actionButtons/reset.png");
+	background-repeat: no-repeat;
+	height: 23px;	
+	border : 0px;
+	background-color: transparent;
+}
+
+.validateBlock .addValidate{
+	width: 79px;
+	background-image:url("../images/validate.png");
+	background-repeat: no-repeat;
+	height: 23px;	
+	border : 0px;
+	background-color: transparent;
+}
+
+.validateBlock input[type=radio] {
+    border: 0px;
+    width: 11px;
+    height: 10px;
+    cursor:pointer;
+    /*-moz-appearance: none;*/
+}
+
+/*Validate container*/  
+#validate{
+	padding-left:2px;
+	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 2px;
+}
+
+#validate_desc{
+	height: 25px;
+	width:170px;
+	padding: 5px;
+	line-height: 12px;
+}
+
+
+ /*Validate table properties*/
+.validate_inner_table{
+	margin-left: 0px;
+	padding-top:0px;
+}
+
+.validate_inner_table_body{
+	border-collapse: collapse; 
+	margin-left: 0px;
+	margin-right:0px;
+	width: 90%;
+}
+
+.validate_table_th{
+	border-bottom: 1px solid #818181;
+	font-family: 'Source Sans Pro';
+	font-weight:600;
+	font-size: 14px;
+	color: #1414a4;
+	padding-bottom: 10px;
+	text-align: center;
+	cursor: default;
+}
+
+.validate_table_td{
+	font-family: 'Source Sans Pro';
+	font-weight:400;
+	/* font-family: 'Source Sans Pro-Regular'; */
+	font-size: 14px;
+	color: #818181;
+	line-height: 16px;
+}
+
+.validate_inner_table tbody tr:nth-child(1) td {
+	/* padding-top: 20px;
+	padding-bottom: 20px; */	
+}
+
+.validate_inner_table .borderless_tr td{
+	/*line-height: 35px;*/
+	line-height: 20px !important;
+}
+
+/* 
+-----------------------------------------
+	Scrollable related CSS 
+------------------------------------------
+*/
+
+.validateBlock .scrollableContainer {
+    height: 477px;
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+    width:255px;
+}
+
+.validateBlock .scrollableContainer .headerSpacer {
+	/*    border: 1px solid #d5d5d5;*/
+    border:1px solid #d5d5d5;
+	border-left-width: 0;
+ 	border-right-width: 0;
+ 	border-top-width: 0;
+	border-bottom-width:2px;
+   
+ /*   border-bottom-color: #bbb;
+    position: absolute;
+    height: 36px;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+.validateBlock .scrollableContainer th .orderWrapper {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    cursor: pointer;
+}
+
+.validateBlock .scrollableContainer th .orderWrapper .order {
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.validateBlock .scrollableContainer th .orderWrapper .active {
+    color: #464646;
+}
+
+.validateBlock th:nth-child(2) .orderWrapper {
+	top :12px;
+}
+
+.validateBlock th:nth-child(4) .orderWrapper {
+	top :13px;
+	right:7.5px;
+}
+
+.validateBlock .scrollArea {
+	margin-top:0px;
+    height: 442px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+ /*   border: 1px solid #d5d5d5; */
+    /*  the implementation of this is still quite buggy; specifically, it doesn't like the 
+        absolutely positioned heade	rs within 
+    -webkit-overflow-scrolling: touch;  */
+}
+
+.validateBlock .scrollArea table {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 0;
+    width:255px;
+    /*width: 100%;*/
+    border: none;
+    margin-left: 2px;
+    margin-top: 0px;
+    border-collapse: separate;	
+	border-spacing: 0 9px;
+    /*border-collapse: separate;*/
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.validateBlock .scrollArea table th {
+    padding: 0 !important;
+    border: none !important;
+    min-width: 20px;
+}
+
+.validateBlock .scrollArea table .th-inner {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    height: 20px !important;
+    line-height: 20px !important;
+    cursor: pointer;
+}
+
+.validateBlock .scrollArea table th .box {
+ /*   padding: 0 8px;
+    padding-right: 11px;    /*  order icon width*/
+ /*   border-left: 1px solid #ddd; */
+}
+
+/*  to hack fix firefox border issue    */
+@-moz-document url-prefix() {
+    .scrollArea table th .box{
+    /*    border-right: 1px solid #ddd; */
+        border-left: none;
+    }
+}
+
+.validateBlock .scrollArea table .th-inner .ng-scope {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.validateBlock .scrollArea table tr th:first-child th .box {
+    border-left: none;
+}
+
+.validateBlock .scrollArea table .th-inner.condensed {
+    padding: 0 3px;
+}
+
+.validateBlock .scrollArea table tbody tr td:first-child {
+    border-left: none;
+}
+
+.validateBlock .scrollArea table tbody tr td:last-child {
+    border-right: none;
+}
+
+.validateBlock .scrollArea table tbody tr:first-child td {
+    border-top: none;
+}
+
+.validateBlock .scrollArea table tbody tr:last-child td {
+  /*  border-bottom: 2px solid #ddd; */
+}
+
+.validateBlock .scrollArea table tbody tr td {
+ /*   border-bottom: 1px solid #ddd; */
+  	white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.validateBlock .scrollableContainer .scaler {
+    position: absolute;
+    top: 0px;
+    width: 2px;
+    height: 100%;
+    background-color: #CFCFCF;
+}
+
+.validateBlock .scrollableContainer th .resize-rod {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: col-resize;
+    width: 4px;
+    height: 100%;
+}
+
+.validateBlock .scrollable-resizing .scrollableContainer {
+    cursor: col-resize;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
