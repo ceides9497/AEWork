@@ -337,6 +337,9 @@ function hideValidateAudio(){
 <%@include file="validateAudio.jsp" %>
 <script>angular.bootstrap(document.getElementById("validateAudioBlock"), ['validateAudio_App']);</script>
 
+<%@include file="resourceManagement.jsp" %>
+<script>angular.bootstrap(document.getElementById("resourceManagementBlock"), ['resourceManagement_App']);</script>
+
 </div>
 
 </div>
